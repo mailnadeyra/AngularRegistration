@@ -1,0 +1,21 @@
+<div class="container col-md-6">
+    <h1 style="color: red;">Register User</h1>
+     <form (ngSubmit)="login()" >
+   
+       
+       <div class="mb-3">
+         <label for="exampleFormControlInput1" class="form-label">Email</label>
+         <input type="email" class="form-control" id="emailId" name="emailId" [(ngModel)]="loginUser.emailId" >
+       </div>
+       
+       <div class="mb-3">
+         <label for="exampleFormControlInput1" class="form-label">Password</label>
+         <input type="password" class="form-control" id="password" name="password" [(ngModel)]="loginUser.password" >
+       </div>
+
+   
+      
+       
+        <button  type="submit" class="btn btn-primary" >Login</button>
+     </form>
+   </div>
